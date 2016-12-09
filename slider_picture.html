@@ -1,0 +1,263 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link href="css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+</head>
+<body>
+<div id="jp_container_1" class="jp-video jp-video-270p" role="application" aria-label="media player" style="margin:10px auto;">
+	<div class="jp-type-playlist">
+		<!-- <div id="jquery_jplayer_1" class="jp-jplayer"></div> -->
+		<div class="jp-gui">
+		<canvas id="auditsysPlayPic" width="800" height="500" >Your browser does not support the canvas element.</canvas>
+			<div class="jp-interface">
+				<div class="jp-progress">
+					<div class="jp-seek-bar">
+						<div class="jp-play-bar"></div>
+					</div>
+				</div>
+				<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+				<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+				<div class="jp-controls-holder">
+					<div class="jp-controls">
+						<button class="jp-previous" role="button" tabindex="0" onclick ="picPlay.previous()">previous</button>
+						<button class="jp-play" role="button" tabindex="0" onclick ="picPlay.play()">play</button>
+						<button class="jp-next" role="button" tabindex="0" onclick ="picPlay.next()">next</button>
+						<button class="jp-stop" role="button" tabindex="0" onclick ="picPlay.stop()">stop</button>
+					</div>
+					<div class="jp-toggles">
+						<button class="jp-repeat" role="button" tabindex="0" onclick ="picPlay.repeat()">repeat</button>
+						<button class="jp-full-screen" role="button" tabindex="0" onclick ="picPlay.fullScreen()">full screen</button>
+					</div>
+				</div>
+				<div class="jp-details">
+					<div class="jp-title" aria-label="title">&nbsp;</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+<script>
+window.onload = function(){			 
+	initPic();		 
+	//drawingPicture();
+}
+
+//初始化的画面
+var initPic = function(){
+       var img=new Image();
+           img.src ="image/loading_large.gif";
+           var c=document.getElementById("auditsysPlayPic");
+		   img.onload = function(){
+		   var cxt=c.getContext("2d");
+		       cxt.drawImage(img,0,0,720,540,0,0,800,500);	
+        
+}
+}
+//获取数据
+//var arrayImgUrl =[["jpg/1.jpg"],["jpg/2.jpg","jpg/3.jpg"],["jpg/4.jpg","jpg/5.jpg","jpg/6.jpg"],["jpg/7.jpg","jpg/8.jpg","jpg/9.jpg","jpg/10.jpg"],["jpg/11.jpg","jpg/12.jpg","jpg/13.jpg","jpg/14.jpg","jpg/15.jpg"]];
+//var arrayImgUrl =[[["jpg/1.jpg",000,000]],
+ //                 [["jpg/2.jpg",200,000],["jpg/3.jpg",400,000]],
+//				  [["jpg/4.jpg",600,000],["jpg/5.jpg",000,200],["jpg/6.jpg",200,200]],
+//				  [["jpg/7.jpg",400,200],["jpg/8.jpg",600,200],["jpg/9.jpg",000,400],["jpg/10.jpg",200,400]],
+	//			  [["jpg/11.jpg",400,400],["jpg/12.jpg",600,400]]];
+var arrayImgUrl =[[["jpg/1.jpg",000,000], ["jpg/2.jpg",200,000],["jpg/3.jpg",400,000], ["jpg/4.jpg",600,000],["jpg/5.jpg",000,200],["jpg/6.jpg",200,200],
+				  ["jpg/7.jpg",400,200],["jpg/8.jpg",600,200],["jpg/9.jpg",000,400],["jpg/10.jpg",200,400],
+				  ["jpg/11.jpg",400,400],["jpg/12.jpg",600,400]]];
+//var arrayImgUrl =["jpg/4.jpg","jpg/5.jpg","jpg/6.jpg"];
+//var pic_list = [];
+//for(i=0;i<arrayImg.length;i++){
+ //       pic_list.push(arrayImg[i].length);
+//}
+
+
+//采用的是闭包处理的函数
+ var drawingPicture = (function(){
+             indexImg=0;
+			 imgArray =[];
+			 i=-1;
+		 //var img=new Image(); 
+		
+		 var c=document.getElementById("auditsysPlayPic");
+		 var cxt=c.getContext("2d");
+		 return function(){
+		                   i++;
+						//var val = ((i+1)/5)*800; //alert(val);
+                        // picPlay.progressBar(val);
+						//alert(i);
+						//for循环里面的闭包能保证每次循环的时候函数都能立即执行一次；
+				 for(indexImg=0;indexImg<arrayImgUrl[i].length;indexImg++){ 
+					  imgArray[indexImg]=new Image(); 
+						         
+					  imgArray[indexImg].src =arrayImgUrl[i][indexImg][0];
+								  
+					  imgArray[indexImg].onload = (function(indexImg){ 
+					      //这个return的闭包函数很重要，否则首次加载的时候图片不显示；    
+                          return function(){
+							   // cxt.clearRect(0,0,1200,500);
+                              cxt.drawImage(imgArray[indexImg],0,0,210,210,arrayImgUrl[i][indexImg][1],arrayImgUrl[i][indexImg][2],200,200); //context.drawImage(img,sx,sy,swidth,sheight,x,y,width,height);         
+                              //alert(i);
+						  }
+                              
+					   })(indexImg);
+						 
+						 
+						 }
+				                               	
+	                    if(i>=0&&window.clearInterval(t1)){window.clearInterval(t1);}
+						//alert(t1);
+		 
+		           }
+             })();
+
+//创建播放组件对象			 
+var picPlay ={
+         //定义一个播放状态的属性；
+		 "playStatus":1,
+
+		 //图片播放按钮
+		 "play":function(){
+				       if(this.playStatus===1&&indexImg===0){
+					    //alert("1");
+					  // this.progressBar(this.playVal);
+					   
+				       $(".jp-play").css("background","url(image/jplayer.blue.monday.jpg) -41px -42px no-repeat");
+			           t1 = window.setInterval("drawingPicture()",1000); 
+					   //drawingPicture();
+                       this.playStatus =0;					   
+				    }
+					  else if(this.playStatus===1&&indexImg!==0&&indexImg <= 9){
+					     //alert("2");
+					     $(".jp-play").css("background","url(image/jplayer.blue.monday.jpg) -41px -42px no-repeat");
+					     t1 = window.setInterval("drawingPicture()",1000);
+						//drawingPicture();
+						  this.playStatus =0;
+					  }
+					else {
+					   // alert("stop");
+					   $(".jp-play").css("background","url(image/jplayer.blue.monday.jpg) -41px 0  no-repeat");
+					   window.clearInterval(t1);
+					 // drawingPicture();
+					   this.playStatus =1;	
+					}
+				  },
+		
+		//进度条显示
+		"progressBar":function(val){
+		               $(".jp-play-bar").animate({width:val});
+					   //$("#boxB").css({width:"50px",height:"50px",background:"blue",scale: 2});
+					   //document.getElementById("boxB").style.webkitTransition = "width:2s";
+		
+		
+		},
+		//图片播放快进
+		"next":function(){
+		
+		               $(".jp-play").css("background","url(image/jplayer.blue.monday.jpg)  no-repeat");    
+		               //indexImg =indexImg+1; 
+					   if(indexImg<10){
+					     drawingPicture();
+					   }
+					   
+		               //alert("下一个");
+					   }, 
+
+		//图片播放倒退
+		"previous":function(){
+		               $(".jp-play").css("background","url(image/jplayer.blue.monday.jpg)  no-repeat");
+					   if(indexImg>=2){
+					        indexImg =indexImg-2;
+							drawingPicture();
+					   }
+					   
+					   else{
+					        indexImg=0;
+							drawingPicture();
+					   }
+		              
+					   
+		               //alert("上一个");
+					   }, 
+
+ 		//图片播放暂停
+		"stop":function(){
+		               $(".jp-play").css("background","url(image/jplayer.blue.monday.jpg)  no-repeat");
+		                
+					   window.clearInterval(t1);
+					   this.playStatus =1;
+		               // alert("暂停");  
+					   },
+
+ 		//图片重复播放
+		"repeat":function(){
+		               
+ 					    $(".jp-play").css("background","url(image/jplayer.blue.monday.jpg)  no-repeat");
+		                alert("重复模式");  },	
+
+ 		//图片全屏播放
+		"fullScreen":function(){
+		                  
+					   var docElm = document.getElementById("jp_container_1");
+ 
+                     //W3C 
+ 
+                      if (docElm.requestFullscreen) { 
+ 
+                           docElm.requestFullscreen(); 
+ 
+                        }
+ 
+                  //FireFox 
+ 
+                     else if (docElm.mozRequestFullScreen) { 
+                       document.querySelector("#auditsysPlayPic").style.width ="1200px" ;
+                         docElm.mozRequestFullScreen(); 
+ 
+                        }
+ 
+                 //Chrome等 
+ 
+                    else if (docElm.webkitRequestFullScreen) { 
+                    
+                          docElm.webkitRequestFullScreen(); 
+ 
+                        }
+ 
+                   //IE11
+ 
+                    else if (elem.msRequestFullscreen) {
+ 
+                         elem.msRequestFullscreen();
+ 
+                        }
+						
+				//退出全屏		
+				  if (document.exitFullscreen) { 
+                         document.exitFullscreen(); 
+                    } 
+					
+                  else if (document.mozCancelFullScreen) { 
+				        document.querySelector("#auditsysPlayPic").style.width ="800px" ;
+                         document.mozCancelFullScreen(); 
+                    } 
+					
+                  else if (document.webkitCancelFullScreen) { 
+                         document.webkitCancelFullScreen(); 
+                    } 
+					
+                   else if (document.msExitFullscreen) { 
+                          document.msExitFullscreen(); 
+                    }
+						 // alert("全屏模式"); 
+			 },		
+			 
+			 
+			 
+			 }
+
+</script>
+</body>
+</html>
