@@ -58,10 +58,9 @@ var initPic = function(){
 }
 }
 
- index =0;
+ index =0;//测试时使用的，最好不用全局变量；有多种方式，可以采取闭包，可以定义全局对象，所有的全局变量都在这个对象里面；
 //获取数据
- function ajaxForjson(){
-              //alert(index); 
+ function ajaxForjson(){            
  $.ajax({  
         //请求方式为get  
         type:"GET",  
@@ -70,64 +69,50 @@ var initPic = function(){
         //返回数据格式为json  
         dataType: "json",  
         //请求成功完成后要执行的方法  
-        success: function(data){  
-            
-           
-                       // var numberOfImages =  data.imagelist.length; //图片的数量
-						//var index = data.index;                      //index值
-					    imagelist = data.imagelist; 					//得到的是一个数组
-		                drawingPicture(); 
-                        index=index+1; //设置一个变量，控制循环次数；
+        success: function(data){           
+                // var numberOfImages =  data.imagelist.length; //图片的数量
+	        //var index = data.index;  //index值
+		 imagelist = data.imagelist; 	//得到的是一个数组
+		 drawingPicture(); 
+                 index=index+1; //设置一个变量，控制循环次数；
                         						
         }  
     }) ;
  
  if(index>=100&&window.clearInterval(t1)){window.clearInterval(t1);}
 
- // index=index+1; //设置一个变量，控制循环次数；
  }
 
-
-						var drawingPicture = (function(){
-             indexImg=0;
-			 imgArray =[];
-			 //i=0;
-			
-		 //var img=new Image(); 
-		
-		 var c=document.getElementById("auditsysPlayPic");
-		 var cxt=c.getContext("2d");
-		 return function(){
-                      	 
-		                   //i++;
-						//var val = ((i+1)/5)*800; //alert(val);
-                        // picPlay.progressBar(val);
-						//alert(i);
-						//for循环里面的闭包能保证每次循环的时候函数都能立即执行一次；
-				 for(indexImg=0;indexImg<imagelist.length;indexImg++){ 
-					  imgArray[indexImg]=new Image();  
+//采用的是闭包处理的函数
+var drawingPicture = (function(){
+             //indexImg=0;
+	     imgArray =[];
+	     var c=document.getElementById("auditsysPlayPic");
+	     var cxt=c.getContext("2d");
+	     return function(){		
+                 //var val = ((i+1)/5)*800; //alert(val)可以显示播放时间;
+                // picPlay.progressBar(val);
+		//alert(i);
+		//for循环里面的闭包能保证每次循环的时候函数都能立即执行一次；
+		 for(indexImg=0;indexImg<imagelist.length;indexImg++){ 
+			  imgArray[indexImg]=new Image();  
 						         
-					  imgArray[indexImg].src ="jpg/"+imagelist[indexImg].imagelist; 
+			  imgArray[indexImg].src ="jpg/"+imagelist[indexImg].imagelist; 
 								  
-					  imgArray[indexImg].onload = (function(indexImg){ 
-					      //这个return的闭包函数很重要，否则首次加载的时候图片不显示；    
+			  imgArray[indexImg].onload = (function(indexImg){ 
+			  //这个return的闭包函数很重要，否则首次加载的时候图片不显示；    
                           return function(){
-						        // alert(parseInt(imagelist[indexImg].X));
-							   // cxt.clearRect(0,0,1200,500);      
+			   // alert(parseInt(imagelist[indexImg].X));
+			   // cxt.clearRect(0,0,1200,500);清除之前的所有画布，我们这个播放器不用清除      
                               cxt.drawImage(imgArray[indexImg],0,0,parseInt(imagelist[indexImg].rectX),parseInt(imagelist[indexImg].rectY),parseInt(imagelist[indexImg].X),parseInt(imagelist[indexImg].Y),parseInt(imagelist[indexImg].rectX),parseInt(imagelist[indexImg].rectY)); //context.drawImage(img,sx,sy,swidth,sheight,x,y,width,height);         
                               //alert(i);
-						  }
+		  }
                               
-					   })(indexImg);
-						 
-						 
-						 }
-				                               	
-	                    
-						//alert(t1);
-		 
-		           }
-             })();	
+	 })(indexImg);						 						 
+      }				                               		                    						//alert(t1);		 
+   }
+ })();	
+//测试数据时候各种数据类型
 //var arrayImgUrl =[["jpg/1.jpg"],["jpg/2.jpg","jpg/3.jpg"],["jpg/4.jpg","jpg/5.jpg","jpg/6.jpg"],["jpg/7.jpg","jpg/8.jpg","jpg/9.jpg","jpg/10.jpg"],["jpg/11.jpg","jpg/12.jpg","jpg/13.jpg","jpg/14.jpg","jpg/15.jpg"]];
 //var arrayImgUrl =[[["jpg/1.jpg",000,000]],
  //                 [["jpg/2.jpg",200,000],["jpg/3.jpg",400,000]],
@@ -144,10 +129,6 @@ var initPic = function(){
 //for(i=0;i<arrayImg.length;i++){
  //       pic_list.push(arrayImg[i].length);
 //}
-
-
-//采用的是闭包处理的函数
- 
 
 //创建播放组件对象			 
 var picPlay ={
