@@ -1,0 +1,258 @@
+{
+	"action" : "display",
+	"index" : 50,
+	"imagelist" : [
+		{
+			"imagelist" : "5000.jpg",
+			"X" : "836",
+			"Y" : "116",
+			"rectX" : "48",
+			"rectY" : "26"
+		},
+		{
+			"imagelist" : "5001.jpg",
+			"X" : "756",
+			"Y" : "142",
+			"rectX" : "192",
+			"rectY" : "2"
+		},
+		{
+			"imagelist" : "5002.jpg",
+			"X" : "752",
+			"Y" : "144",
+			"rectX" : "196",
+			"rectY" : "30"
+		},
+		{
+			"imagelist" : "5003.jpg",
+			"X" : "1264",
+			"Y" : "144",
+			"rectX" : "32",
+			"rectY" : "30"
+		},
+		{
+			"imagelist" : "5004.jpg",
+			"X" : "752",
+			"Y" : "174",
+			"rectX" : "192",
+			"rectY" : "2"
+		},
+		{
+			"imagelist" : "5005.jpg",
+			"X" : "1264",
+			"Y" : "174",
+			"rectX" : "32",
+			"rectY" : "2"
+		},
+		{
+			"imagelist" : "5006.jpg",
+			"X" : "752",
+			"Y" : "176",
+			"rectX" : "176",
+			"rectY" : "14"
+		},
+		{
+			"imagelist" : "5007.jpg",
+			"X" : "1264",
+			"Y" : "176",
+			"rectX" : "32",
+			"rectY" : "14"
+		},
+		{
+			"imagelist" : "5008.jpg",
+			"X" : "752",
+			"Y" : "190",
+			"rectX" : "180",
+			"rectY" : "2"
+		},
+		{
+			"imagelist" : "5009.jpg",
+			"X" : "1264",
+			"Y" : "190",
+			"rectX" : "32",
+			"rectY" : "2"
+		},
+		{
+			"imagelist" : "5010.jpg",
+			"X" : "756",
+			"Y" : "192",
+			"rectX" : "176",
+			"rectY" : "12"
+		},
+		{
+			"imagelist" : "5011.jpg",
+			"X" : "804",
+			"Y" : "204",
+			"rectX" : "48",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "5012.jpg",
+			"X" : "1060",
+			"Y" : "204",
+			"rectX" : "32",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "5013.jpg",
+			"X" : "1188",
+			"Y" : "204",
+			"rectX" : "32",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "5014.jpg",
+			"X" : "884",
+			"Y" : "220",
+			"rectX" : "48",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "5015.jpg",
+			"X" : "836",
+			"Y" : "236",
+			"rectX" : "48",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "5016.jpg",
+			"X" : "900",
+			"Y" : "252",
+			"rectX" : "48",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "5017.jpg",
+			"X" : "868",
+			"Y" : "268",
+			"rectX" : "16",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "5018.jpg",
+			"X" : "100",
+			"Y" : "284",
+			"rectX" : "160",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "5019.jpg",
+			"X" : "804",
+			"Y" : "284",
+			"rectX" : "16",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "5020.jpg",
+			"X" : "100",
+			"Y" : "300",
+			"rectX" : "160",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "5021.jpg",
+			"X" : "100",
+			"Y" : "316",
+			"rectX" : "160",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "5022.jpg",
+			"X" : "804",
+			"Y" : "316",
+			"rectX" : "48",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "5023.jpg",
+			"X" : "1060",
+			"Y" : "316",
+			"rectX" : "32",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "5024.jpg",
+			"X" : "1204",
+			"Y" : "316",
+			"rectX" : "16",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "5025.jpg",
+			"X" : "100",
+			"Y" : "332",
+			"rectX" : "160",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "5026.jpg",
+			"X" : "884",
+			"Y" : "332",
+			"rectX" : "48",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "5027.jpg",
+			"X" : "836",
+			"Y" : "348",
+			"rectX" : "48",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "5028.jpg",
+			"X" : "900",
+			"Y" : "364",
+			"rectX" : "48",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "5029.jpg",
+			"X" : "868",
+			"Y" : "380",
+			"rectX" : "16",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "5030.jpg",
+			"X" : "804",
+			"Y" : "396",
+			"rectX" : "16",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "5031.jpg",
+			"X" : "804",
+			"Y" : "428",
+			"rectX" : "48",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "5032.jpg",
+			"X" : "1060",
+			"Y" : "428",
+			"rectX" : "32",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "5033.jpg",
+			"X" : "1204",
+			"Y" : "428",
+			"rectX" : "16",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "5034.jpg",
+			"X" : "884",
+			"Y" : "444",
+			"rectX" : "48",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "5035.jpg",
+			"X" : "836",
+			"Y" : "460",
+			"rectX" : "48",
+			"rectY" : "16"
+		}
+	]
+}

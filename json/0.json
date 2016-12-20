@@ -1,0 +1,14 @@
+{
+	"action" : "display",
+	"index" : 0,
+	"imagelist" : [
+		{
+			"imagelist" : "0.jpg",
+			"X" : "0",
+			"Y" : "0",
+			"rectX" : "1366",
+			"rectY" : "768"
+		}
+	
+	]
+}

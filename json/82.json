@@ -1,0 +1,20 @@
+{
+	"action" : "display",
+	"index" : 82,
+	"imagelist" : [
+		{
+			"imagelist" : "8200.jpg",
+			"X" : "100",
+			"Y" : "174",
+			"rectX" : "160",
+			"rectY" : "46"
+		},
+		{
+			"imagelist" : "8201.jpg",
+			"X" : "100",
+			"Y" : "396",
+			"rectX" : "160",
+			"rectY" : "48"
+		}
+	]
+}

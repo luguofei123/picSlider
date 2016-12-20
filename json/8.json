@@ -1,0 +1,510 @@
+{
+	"action" : "display",
+	"index" : 8,
+	"imagelist" : [
+		{
+			"imagelist" : "800.jpg",
+			"X" : "852",
+			"Y" : "116",
+			"rectX" : "32",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "801.jpg",
+			"X" : "100",
+			"Y" : "132",
+			"rectX" : "464",
+			"rectY" : "10"
+		},
+		{
+			"imagelist" : "802.jpg",
+			"X" : "852",
+			"Y" : "132",
+			"rectX" : "32",
+			"rectY" : "10"
+		},
+		{
+			"imagelist" : "803.jpg",
+			"X" : "100",
+			"Y" : "142",
+			"rectX" : "464",
+			"rectY" : "2"
+		},
+		{
+			"imagelist" : "804.jpg",
+			"X" : "756",
+			"Y" : "142",
+			"rectX" : "192",
+			"rectY" : "2"
+		},
+		{
+			"imagelist" : "805.jpg",
+			"X" : "100",
+			"Y" : "144",
+			"rectX" : "464",
+			"rectY" : "14"
+		},
+		{
+			"imagelist" : "806.jpg",
+			"X" : "752",
+			"Y" : "144",
+			"rectX" : "196",
+			"rectY" : "14"
+		},
+		{
+			"imagelist" : "807.jpg",
+			"X" : "1264",
+			"Y" : "144",
+			"rectX" : "32",
+			"rectY" : "14"
+		},
+		{
+			"imagelist" : "808.jpg",
+			"X" : "100",
+			"Y" : "158",
+			"rectX" : "208",
+			"rectY" : "2"
+		},
+		{
+			"imagelist" : "809.jpg",
+			"X" : "752",
+			"Y" : "158",
+			"rectX" : "196",
+			"rectY" : "2"
+		},
+		{
+			"imagelist" : "810.jpg",
+			"X" : "1264",
+			"Y" : "158",
+			"rectX" : "32",
+			"rectY" : "2"
+		},
+		{
+			"imagelist" : "811.jpg",
+			"X" : "100",
+			"Y" : "160",
+			"rectX" : "208",
+			"rectY" : "14"
+		},
+		{
+			"imagelist" : "812.jpg",
+			"X" : "752",
+			"Y" : "160",
+			"rectX" : "196",
+			"rectY" : "14"
+		},
+		{
+			"imagelist" : "813.jpg",
+			"X" : "1200",
+			"Y" : "160",
+			"rectX" : "96",
+			"rectY" : "14"
+		},
+		{
+			"imagelist" : "814.jpg",
+			"X" : "100",
+			"Y" : "174",
+			"rectX" : "432",
+			"rectY" : "2"
+		},
+		{
+			"imagelist" : "815.jpg",
+			"X" : "548",
+			"Y" : "174",
+			"rectX" : "96",
+			"rectY" : "2"
+		},
+		{
+			"imagelist" : "816.jpg",
+			"X" : "752",
+			"Y" : "174",
+			"rectX" : "192",
+			"rectY" : "2"
+		},
+		{
+			"imagelist" : "817.jpg",
+			"X" : "1200",
+			"Y" : "174",
+			"rectX" : "96",
+			"rectY" : "2"
+		},
+		{
+			"imagelist" : "818.jpg",
+			"X" : "100",
+			"Y" : "176",
+			"rectX" : "432",
+			"rectY" : "14"
+		},
+		{
+			"imagelist" : "819.jpg",
+			"X" : "548",
+			"Y" : "176",
+			"rectX" : "96",
+			"rectY" : "14"
+		},
+		{
+			"imagelist" : "820.jpg",
+			"X" : "752",
+			"Y" : "176",
+			"rectX" : "176",
+			"rectY" : "14"
+		},
+		{
+			"imagelist" : "821.jpg",
+			"X" : "1200",
+			"Y" : "176",
+			"rectX" : "144",
+			"rectY" : "14"
+		},
+		{
+			"imagelist" : "822.jpg",
+			"X" : "100",
+			"Y" : "190",
+			"rectX" : "432",
+			"rectY" : "2"
+		},
+		{
+			"imagelist" : "823.jpg",
+			"X" : "548",
+			"Y" : "190",
+			"rectX" : "96",
+			"rectY" : "2"
+		},
+		{
+			"imagelist" : "824.jpg",
+			"X" : "752",
+			"Y" : "190",
+			"rectX" : "180",
+			"rectY" : "2"
+		},
+		{
+			"imagelist" : "825.jpg",
+			"X" : "1200",
+			"Y" : "190",
+			"rectX" : "144",
+			"rectY" : "2"
+		},
+		{
+			"imagelist" : "826.jpg",
+			"X" : "100",
+			"Y" : "192",
+			"rectX" : "432",
+			"rectY" : "12"
+		},
+		{
+			"imagelist" : "827.jpg",
+			"X" : "548",
+			"Y" : "192",
+			"rectX" : "96",
+			"rectY" : "12"
+		},
+		{
+			"imagelist" : "828.jpg",
+			"X" : "756",
+			"Y" : "192",
+			"rectX" : "176",
+			"rectY" : "12"
+		},
+		{
+			"imagelist" : "829.jpg",
+			"X" : "100",
+			"Y" : "204",
+			"rectX" : "432",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "830.jpg",
+			"X" : "548",
+			"Y" : "204",
+			"rectX" : "96",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "831.jpg",
+			"X" : "804",
+			"Y" : "204",
+			"rectX" : "416",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "832.jpg",
+			"X" : "100",
+			"Y" : "220",
+			"rectX" : "432",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "833.jpg",
+			"X" : "548",
+			"Y" : "220",
+			"rectX" : "96",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "834.jpg",
+			"X" : "884",
+			"Y" : "220",
+			"rectX" : "64",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "835.jpg",
+			"X" : "100",
+			"Y" : "236",
+			"rectX" : "320",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "836.jpg",
+			"X" : "836",
+			"Y" : "236",
+			"rectX" : "48",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "837.jpg",
+			"X" : "100",
+			"Y" : "252",
+			"rectX" : "608",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "838.jpg",
+			"X" : "900",
+			"Y" : "252",
+			"rectX" : "48",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "839.jpg",
+			"X" : "100",
+			"Y" : "268",
+			"rectX" : "608",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "840.jpg",
+			"X" : "852",
+			"Y" : "268",
+			"rectX" : "32",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "841.jpg",
+			"X" : "100",
+			"Y" : "284",
+			"rectX" : "608",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "842.jpg",
+			"X" : "788",
+			"Y" : "284",
+			"rectX" : "32",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "843.jpg",
+			"X" : "100",
+			"Y" : "300",
+			"rectX" : "608",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "844.jpg",
+			"X" : "100",
+			"Y" : "316",
+			"rectX" : "256",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "845.jpg",
+			"X" : "804",
+			"Y" : "316",
+			"rectX" : "64",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "846.jpg",
+			"X" : "1060",
+			"Y" : "316",
+			"rectX" : "32",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "847.jpg",
+			"X" : "1188",
+			"Y" : "316",
+			"rectX" : "32",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "848.jpg",
+			"X" : "100",
+			"Y" : "332",
+			"rectX" : "208",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "849.jpg",
+			"X" : "884",
+			"Y" : "332",
+			"rectX" : "64",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "850.jpg",
+			"X" : "100",
+			"Y" : "348",
+			"rectX" : "208",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "851.jpg",
+			"X" : "836",
+			"Y" : "348",
+			"rectX" : "48",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "852.jpg",
+			"X" : "100",
+			"Y" : "364",
+			"rectX" : "176",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "853.jpg",
+			"X" : "900",
+			"Y" : "364",
+			"rectX" : "48",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "854.jpg",
+			"X" : "100",
+			"Y" : "380",
+			"rectX" : "176",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "855.jpg",
+			"X" : "852",
+			"Y" : "380",
+			"rectX" : "32",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "856.jpg",
+			"X" : "100",
+			"Y" : "396",
+			"rectX" : "160",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "857.jpg",
+			"X" : "788",
+			"Y" : "396",
+			"rectX" : "32",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "858.jpg",
+			"X" : "100",
+			"Y" : "412",
+			"rectX" : "160",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "859.jpg",
+			"X" : "100",
+			"Y" : "428",
+			"rectX" : "160",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "860.jpg",
+			"X" : "804",
+			"Y" : "428",
+			"rectX" : "64",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "861.jpg",
+			"X" : "1060",
+			"Y" : "428",
+			"rectX" : "32",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "862.jpg",
+			"X" : "1188",
+			"Y" : "428",
+			"rectX" : "32",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "863.jpg",
+			"X" : "100",
+			"Y" : "444",
+			"rectX" : "160",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "864.jpg",
+			"X" : "884",
+			"Y" : "444",
+			"rectX" : "64",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "865.jpg",
+			"X" : "100",
+			"Y" : "460",
+			"rectX" : "160",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "866.jpg",
+			"X" : "836",
+			"Y" : "460",
+			"rectX" : "48",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "867.jpg",
+			"X" : "100",
+			"Y" : "476",
+			"rectX" : "160",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "868.jpg",
+			"X" : "914",
+			"Y" : "728",
+			"rectX" : "32",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "869.jpg",
+			"X" : "914",
+			"Y" : "744",
+			"rectX" : "16",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "870.jpg",
+			"X" : "946",
+			"Y" : "744",
+			"rectX" : "16",
+			"rectY" : "16"
+		},
+		{
+			"imagelist" : "871.jpg",
+			"X" : "962",
+			"Y" : "760",
+			"rectX" : "16",
+			"rectY" : "8"
+		}
+	]
+}
